@@ -1,0 +1,48 @@
+@charset 'utf-8';
+
+
+h1 {
+    /*線の種類（二重線）太さ 色*/
+    border-bottom: double 5px #3CB371;
+}
+
+ul, ol {
+    color: #1e366a;
+    border-top: solid #1e366a 1px;/*上のボーダー*/
+    border-bottom: solid #1e366a 1px;/*下のボーダー*/
+    padding: 0.5em 0 0.5em 1.5em;
+  }
+  
+ul li, ol li {
+line-height: 1.5;
+padding: 0.5em 0;
+}
+
+.box11{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #5d627b;
+    background: white;
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+.box11 p {
+    margin: 0; 
+    padding: 0;
+}
+
+table{
+    width: 100%;
+    border-spacing: 0;
+  }
+  
+  table th{
+    border-bottom: solid 2px #fb5144;
+    padding: 10px 0;
+  }
+  
+  table td{
+    border-bottom: solid 2px #ddd;
+    text-align: center;
+    padding: 10px 0;
+  }

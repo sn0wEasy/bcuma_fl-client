@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 
+  Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css"
+      href="{{ staticfile('style.css') }}">
+  <link rel="stylesheet" type="text/css"
+      href="{{ staticfile('procedure.css') }}">
+  <title>FL-Client</title>
+</head>
+
+<body>
+    <h1>FL-Client</h1>
+    <p><b>FL-Client ID: {{ uid }}</b></p>
+    <br>
+    <p>The machine learning model used for prediction is built from the resources retrieved by the client from the resource server.</p>
+    <p>The predicted label given by the model to the dataset uploaded by the requesting party is as follows.</p>
+    <div class="box11">
+      <p>Predicted Label:</p>
+      <p>{{ label }}</p>
+    </div>
+    <br>
+    <br>
+    <blockquote>
+    <u>Procedure 15</u><br>
+    The label prediction results for the input data are displayed. (19)<br>
+    </blockquote>
+
+    <p><img src="/static/images/app02.png" width="673" height="400"></p>
+</body>
+
+</html>
