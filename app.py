@@ -483,7 +483,7 @@ def redirect_token_after_claims():
         body = body.decode('utf8').replace("'", '"')
         body = json.loads(body)
         try:
-            rpt = body['response']['token']  # rpt ない場合の処理も書く必要あり
+            rpt = body['response']['token'] 
         except:
             return make_response(jsonify({'error': "rpt may not be issued."}), 400)
 
